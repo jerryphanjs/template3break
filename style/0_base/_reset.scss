@@ -1,0 +1,82 @@
+@charset 'utf-8';
+/*------------------------------------------------------------
+	Reset
+------------------------------------------------------------*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header,
+nav, section,
+time, mark, audio, video {
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+	display: block;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body{
+	-webkit-text-size-adjust: 100%;
+}
+
+body, table,
+input, textarea, select, option,
+h1, h2, h3, h4, h5, h6, p, a, span, small, i, dd, dt, dl, label, li, ul, ol, strong, b, u  {
+	font-family: "Avenir", "Open Sans", "Helvetica Neue", "Helvetica", "Arial", "Verdana", "Roboto", "游ゴシック", "Yu Gothic",
+ "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", "Meiryo", 
+"ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+table,
+input, textarea, select, option {
+	line-height: 1.1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+:focus {
+	outline: 0;
+}
+
+ins {
+	text-decoration: none;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+img {
+	vertical-align: top;
+}
+
+a{
+	transition: 0.3s ease-in-out;
+}
+a:hover,
+a:hover img{
+    opacity: 0.70;
+    filter: alpha(opacity=70);
+	-ms-filter: "alpha(opacity=70)";
+}

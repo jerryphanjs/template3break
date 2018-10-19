@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content=" " />
+  <meta name="keywords" content="" />
+  <title>{{title}}</title>
+  <link href="./assets/css/pc.css" rel="stylesheet">
+  <link href="./assets/css/responsive.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/js/slick/slick.css"/>
+  <script src="./assets/js/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    {{#block "header"}}
+    {{> header}}
+    {{/block}}
+
+    {{#block "main"}}
+    {{{contents}}}
+    {{/block}}
+
+    {{#block "footer"}}
+    {{> footer}}
+    {{/block}}
+
+</body>
+</html>

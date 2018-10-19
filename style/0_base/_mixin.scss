@@ -1,0 +1,126 @@
+//============================================
+// サイト幅でセンタリング
+//============================================
+@mixin center{
+	width: $baseWidth;
+	margin: 0 auto;
+}
+
+//============================================
+// clearfix
+//============================================
+@mixin clear {
+	*zoom: 1;
+	&:after{
+		display: block;
+		content: "";
+		clear: both;
+	}
+}
+
+//============================================
+// フォント
+//============================================
+@mixin mincyo() {
+	font-family: "Avenir", "Open Sans", "Helvetica Neue", "Helvetica", "Arial", "Verdana", "Roboto", "游ゴシック", "Yu Gothic",
+	"游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", "Meiryo", 
+	"ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+
+//============================================
+// breakpoint 999
+//============================================
+@mixin w999 {
+	@media only screen and (max-width: $b_point1) {
+	 @content;
+	}
+  }
+
+//============================================
+// breakpoint 699
+//============================================
+@mixin w699 {
+	@media only screen and (max-width: $b_point2) {
+	 @content;
+	}
+  }
+
+//============================================
+// breakpoint 499
+//============================================
+@mixin w499 {
+	@media only screen and (max-width: $b_point3) {
+	 @content;
+	}
+  }
+
+
+//============================================
+// Mixin Transition
+//============================================
+
+@mixin transition($transitionTime){
+	-webkit-transition: all $transitionTime ease-out;
+		   -moz-transition: all $transitionTime ease-out;
+			-ms-transition: all $transitionTime ease-out;
+			   -o-transition: all $transitionTime ease-out;
+				  transition: all $transitionTime ease-out;
+   }
+//============================================
+// Mixin Border Radius
+//============================================
+
+   @mixin br($varBorder){
+	   border-radius: $varBorder;
+   }
+
+//============================================
+// Mixin Border
+//============================================
+
+   @mixin border($border-direction: "border", $var-width: $borderWidth, $var-color: $borderColor){
+	   @if($border-direction == "border"){
+		   border: $var-width solid $var-color;
+	   }
+	   @if($border-direction == "top"){
+		   border-top: $var-width solid $var-color;
+	   }
+	   @if($border-direction == "left"){
+		   border-left: $var-width solid $var-color;
+	   }
+	   @if($border-direction == "right"){
+		   border-right: $var-width solid $var-color;
+	   }
+	   @if($border-direction == "bottom"){
+		   border-bottom: $var-width solid $var-color;
+	   }
+	   @if($border-direction == "top-right"){
+		   border-top: $var-width solid $var-color;
+		   border-right: $var-width solid $var-color;
+	   }
+	   @if($border-direction == "top-bottom"){
+		   border-top: $var-width solid $var-color;
+		   border-bottom: $var-width solid $var-color;
+	   }
+	   @if($border-direction == "top-left"){
+		   border-top: $var-width solid $var-color;
+		   border-left: $var-width solid $var-color;
+	   }
+	   @if($border-direction == "right-bottom"){
+		   border-right: $var-width solid $var-color;
+		   border-bottom: $var-width solid $var-color;
+	   }
+	   @if($border-direction == "right-left"){
+		   border-right: $var-width solid $var-color;
+		   border-left: $var-width solid $var-color;
+	   }
+	   @if($border-direction == "bottom-left"){
+		   border-bottom: $var-width solid $var-color;
+		   border-left: $var-width solid $var-color;
+	   }
+	   @if($border-direction == "none"){
+		   border: none;
+	   }
+   
+   }

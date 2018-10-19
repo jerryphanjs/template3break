@@ -1,0 +1,43 @@
+/*------------------------------------------------------------
+list
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-list1 {
+    display: flex;
+    li {
+        @include transition(0.2s);
+        a {
+            text-decoration: none;
+            width: 206px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.4rem;
+            font-weight: 500;
+            &.home {
+                width: 55px;
+            }
+        }
+        &:hover{
+            transform: translate(10px);
+        }
+    }
+}
+
+.c-list2 {
+    text-align: center;
+    li {
+        margin-bottom: 35px;
+        a {
+            font-size: 1.8rem;
+            color: $white;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+             }
+        }
+    }
+}
